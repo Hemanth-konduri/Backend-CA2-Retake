@@ -25,6 +25,9 @@ app.get('/users', async(req,res)=>{
     }catch(err){
         res.status(500).send({message:"Internal server error"})
     }
+});
+app.get('/', ()=>{
+    console.log("This is backend CA2 retake");
 })
 app.listen(8080, ()=>{
     console.log("server is  running on the port 80080");
